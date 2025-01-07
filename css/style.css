@@ -1,0 +1,358 @@
+html {
+    font-size: 0.975em;
+}
+
+.printme {
+    display: none;
+}
+
+body {
+    max-width: 1024px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 2.5em 1.57em 4em;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #0e1111;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0.713em 0 0.5em;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+    font-size: 2.074em;
+}
+
+h2 {
+    font-size: 1.424em;
+}
+
+h3 {
+    font-size: 1.266em;
+}
+
+h4 {
+    font-size: 1.125em;
+}
+
+h5,
+h6 {
+    font-size: 1em;
+}
+
+header {
+    margin-bottom: 2.5rem;
+}
+
+.hgroup {
+    text-align: center;
+}
+
+.hgroup h1 {
+    margin-bottom: 6px;
+    padding-bottom: 0;
+}
+
+.objective-text {
+    font-size: 1.143em;
+}
+
+.phone-tag,
+.email-tag,
+.location-tag {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6em;
+}
+
+h3.title {
+    margin-top: 1.5em;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #3b444b;
+}
+
+.local,
+.position,
+.school {
+    font-weight: 600;
+}
+
+.local {
+    margin-bottom: 2px;
+}
+
+.address {
+    margin-top: 0.25em;
+    font-size: 0.938em;
+}
+
+a {
+    color: #0e1111;
+    text-decoration: underline;
+    transition: all 200ms ease;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 570px) {
+    .address {
+        margin-top: 0;
+        font-size: 1em;
+    }
+}
+
+.address,
+.timestamp {
+    display: block;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 570px) {
+    .address,
+    .timestamp {
+        display: block;
+        float: right;
+    }
+}
+
+.toolbox h5,
+.position {
+    margin-top: 0;
+    font-weight: 400;
+}
+
+@media screen and (min-width: 570px) {
+    .toolbox h5,
+    .position {
+        font-weight: 600;
+        font-style: italic;
+    }
+}
+
+.position .timestamp {
+    font-style: normal;
+}
+
+.experience div {
+    margin-bottom: 40px;
+}
+
+.experience div:first-of-type {
+    margin-top: 2rem;
+}
+
+.task {
+    padding-left: 17px;
+}
+
+@media screen and (min-width: 768px) {
+    .task {
+        padding-left: 35px;
+    }
+}
+
+.task li {
+    margin-left: 0;
+    padding-bottom: 7px;
+    padding-left: 13px;
+}
+
+.task li:last-child {
+    padding-bottom: 0;
+}
+
+.toolbox h5,
+.toolbox p {
+    display: inline;
+}
+
+.toolbox h5 {
+    position: relative;
+    padding-right: 10px;
+}
+
+.toolbox h5:after {
+    content: ":";
+    display: block;
+    position: absolute;
+    top: -3px;
+    right: 3px;
+    font-size: 14px;
+}
+
+.toolbox p {
+    margin-top: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+    .hgroup h1 {
+        grid-area: h1;
+        text-align: left;
+    }
+
+    .hgroup h2 {
+        grid-area: h2;
+        margin-top: 0;
+        text-align: left;
+        line-height: 0.70;
+    }
+
+    .email-tag {
+        grid-area: email;
+        align-content: end;
+        text-align: right;
+    }
+
+    .phone-tag {
+        grid-area: phone;
+        text-align: right;
+    }
+
+    .location-tag {
+        grid-area: location;
+        align-content: start;
+        margin: 0;
+        text-align: right;
+    }
+
+    .hgroup {
+        display: grid;
+        grid-template-areas:
+            "h1 email"
+            "h1 phone"
+            "h2 location";
+    }
+}
+
+
+@media print {
+    @page {
+        size: Letter portrait;
+        /* size: auto; */
+        margin: 7mm 9mm;
+    }
+
+    html {
+        /* font-size: 0.975em; */
+        font-size: 0.625em;
+    }
+
+    body {
+        padding: 0em;
+    }
+
+    .address,
+    .timestamp {
+        display: block;
+        float: right;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        font-weight: 400;
+    }
+
+    .objective-text {
+        font-size: 1em;
+    }
+
+    .hgroup h1 {
+        grid-area: h1;
+        text-align: left;
+    }
+
+    .hgroup h2 {
+        grid-area: h2;
+        margin-top: 0;
+        text-align: left;
+        line-height: 0.70;
+    }
+
+    .email-tag {
+        grid-area: email;
+        align-content: end;
+        text-align: right;
+    }
+
+    .phone-tag {
+        grid-area: phone;
+        text-align: right;
+    }
+
+    .location-tag {
+        grid-area: location;
+        align-content: start;
+        margin: 0;
+        text-align: right;
+    }
+
+    .hgroup {
+        display: grid;
+        grid-template-areas:
+            "h1 email"
+            "h1 phone"
+            "h2 location";
+    }
+
+    .experience div {
+        margin-bottom: 35px;
+        page-break-after: avoid;
+    }
+
+    a {
+        color: #0e1111;
+        text-decoration: none;
+    }
+
+    .experience div:first-of-type {
+        page-break-after: calc(2n);
+    }
+
+    .local {
+        margin-bottom: 4px;
+    }
+
+    .local,
+    .position {
+        font-size: 1.1em;
+    }
+
+    .browser-chrome body {
+        padding: 3.5em 4.2em 0em;
+    }
+
+    .browser-chrome .experience>div:nth-child(3) {
+        page-break-after: always;
+    }
+
+    .browser-chrome .experience>div:nth-child(4) {
+        padding-top: 3em;
+    }
+
+    .vendor-mozilla body {
+        padding: 2.5em 4.2em 0em;
+    }
+
+    .vendor-mozilla .experience>div:nth-child(3) {
+        page-break-after: always;
+    }
+
+    .vendor-mozilla .experience>div:nth-child(4) {
+        padding-top: 3em;
+    }
+}
