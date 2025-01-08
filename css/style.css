@@ -2,10 +2,6 @@ html {
     font-size: 0.975em;
 }
 
-.printme {
-    display: none;
-}
-
 body {
     max-width: 1024px;
     background-color: #ffffff;
@@ -237,23 +233,29 @@ a:hover {
     }
 }
 
+button{
+    /* keep this here for now */
+    display:none;
+}
 
 @media print {
+    .no-print {
+        display: none;
+    }
+    
     @page {
         size: Letter portrait;
-        /* size: auto; */
         margin: 7mm 9mm;
     }
 
     html {
-        /* font-size: 0.975em; */
         font-size: 0.625em;
     }
 
     body {
         padding: 0em;
     }
-
+    
     .address,
     .timestamp {
         display: block;
