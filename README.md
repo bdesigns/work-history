@@ -1,4 +1,4 @@
 # Current Work History
 Resume setup as a quick work history page.
 
-More to come.
+Simple, printable, work history resume. Basic html and css with a easy to use print style.
