@@ -2,6 +2,8 @@ html {
     font-size: 0.975em;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
     max-width: 1024px;
     background-color: #ffffff;
@@ -245,7 +247,7 @@ button{
     
     @page {
         size: Letter portrait;
-        margin: 7mm 9mm;
+        margin: 9mm 11mm;
     }
 
     html {
