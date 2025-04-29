@@ -1,5 +1,5 @@
 html {
-    font-size: 0.975em;
+    font-size: 1em;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -178,17 +178,17 @@ a:hover {
 
 .toolbox h5 {
     position: relative;
-    padding-right: 10px;
+    padding-right: 5px;
 }
 
-.toolbox h5:after {
+/* .toolbox h5:after {
     content: ":";
     display: block;
     position: absolute;
     top: -3px;
     right: 3px;
     font-size: 14px;
-}
+} */
 
 .toolbox p {
     margin-top: 0;
@@ -251,7 +251,7 @@ button{
     }
 
     html {
-        font-size: 0.625em;
+        font-size: 0.750rem;
     }
 
     body {
@@ -340,23 +340,23 @@ button{
         padding: 3.5em 4.2em 0em;
     }
 
-    .browser-chrome .experience>div:nth-child(3) {
+    /* .browser-chrome .experience>div:nth-child(3) {
         page-break-after: always;
     }
 
     .browser-chrome .experience>div:nth-child(4) {
         padding-top: 3em;
-    }
+    } */
 
     .vendor-mozilla body {
         padding: 2.5em 4.2em 0em;
     }
 
-    .vendor-mozilla .experience>div:nth-child(3) {
+    /* .vendor-mozilla .experience>div:nth-child(3) {
         page-break-after: always;
     }
 
     .vendor-mozilla .experience>div:nth-child(4) {
         padding-top: 3em;
-    }
+    } */
 }
