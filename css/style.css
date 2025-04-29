@@ -340,6 +340,10 @@ button{
         padding: 3.5em 4.2em 0em;
     }
 
+    .vendor-mozilla body {
+        padding: 2.5em 4.2em 0em;
+    }
+
     /* .browser-chrome .experience>div:nth-child(3) {
         page-break-after: always;
     }
@@ -347,10 +351,6 @@ button{
     .browser-chrome .experience>div:nth-child(4) {
         padding-top: 3em;
     } */
-
-    .vendor-mozilla body {
-        padding: 2.5em 4.2em 0em;
-    }
 
     /* .vendor-mozilla .experience>div:nth-child(3) {
         page-break-after: always;
