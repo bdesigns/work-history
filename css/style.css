@@ -247,7 +247,7 @@ button{
     
     @page {
         size: Letter portrait;
-        margin: 9mm 11mm;
+        margin: 8mm 11mm;
     }
 
     html {
@@ -337,11 +337,11 @@ button{
     }
 
     .browser-chrome body {
-        padding: 3.5em 4.2em 0em;
+        padding: 1.5rem 1rem 0em;
     }
 
     .vendor-mozilla body {
-        padding: 2.5em 4.2em 0em;
+        padding: 1.5rem 1rem 0em;
     }
 
     /* .browser-chrome .experience>div:nth-child(3) {
