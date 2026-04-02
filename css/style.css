@@ -40,7 +40,7 @@ h3 {
 h4 {
     font-size: 1.125em;
 }
-
+.career-break h4,
 h5,
 h6 {
     font-size: 1em;
@@ -99,9 +99,26 @@ a {
     transition: all 200ms ease;
 }
 
-
 a:hover {
     text-decoration: none;
+}
+
+.career-break{
+    border-top: 1px solid hsl(220, 15%, 86%);
+    border-bottom: 1px solid hsl(220, 15%, 86%);
+    padding:9px 40px;
+    font-style: italic;
+    opacity: 0.7;
+}   
+.career-break-text {
+    padding:0 2%;
+}
+
+@media screen and (min-width: 768px) {
+    .career-break{
+        padding-left:7%;
+        padding-right:7%;
+    }
 }
 
 @media screen and (min-width: 570px) {
@@ -251,7 +268,7 @@ button{
     }
 
     html {
-        font-size: 0.750rem;
+        font-size: 0.715rem;
     }
 
     body {
@@ -314,8 +331,8 @@ button{
     }
 
     .experience div {
-        margin-bottom: 35px;
-        page-break-after: avoid;
+        margin-bottom: 30px;
+        /* page-break-after: avoid; */
     }
 
     a {
@@ -346,13 +363,13 @@ button{
 
     /* .browser-chrome .experience>div:nth-child(3) {
         page-break-after: always;
-    }
-
-    .browser-chrome .experience>div:nth-child(4) {
-        padding-top: 3em;
     } */
 
-    /* .vendor-mozilla .experience>div:nth-child(3) {
+    /* .browser-chrome .experience>div:nth-child(4) {
+        padding-top: 3em;
+    } 
+
+     .vendor-mozilla .experience>div:nth-child(3) {
         page-break-after: always;
     }
 
